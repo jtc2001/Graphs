@@ -1,4 +1,4 @@
-package com.jtc2001.graphs;
+package com.artcoffer.utilities;
 
 import java.util.HashSet;
 import java.util.Set;
