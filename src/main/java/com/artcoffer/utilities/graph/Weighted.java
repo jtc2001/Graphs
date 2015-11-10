@@ -1,4 +1,4 @@
-package com.artcoffer.utilities;
+package com.artcoffer.utilities.graph;
 
 public interface Weighted {
 
