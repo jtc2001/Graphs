@@ -1,5 +1,6 @@
 package com.artcoffer.utilities.graph;
 
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -16,6 +17,10 @@ public class Vertex<T> {
 	public T getValue(){
 		return value;
 	}
+	
+	public Set<Edge<T>> getEdges(){
+		return Collections.unmodifiableSet(this.edges);
+	} 
 	
 	public void addEdge(Edge<T> edge){
 		this.edges.add(edge);
@@ -36,6 +41,11 @@ public class Vertex<T> {
 			return false;
 		}
 		return false;
+	}
+	
+	@Override
+	public String toString(){
+		return this.value.toString();
 	}
 	
 }
