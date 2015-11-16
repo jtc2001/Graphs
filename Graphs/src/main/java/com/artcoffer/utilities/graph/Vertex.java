@@ -10,10 +10,20 @@ public class Vertex<T> {
 	
 	private T value;
 	
+	private Vertex<T> parentVertex;
+	
 	public Vertex(T value){
 		this.value = value;
 	}
 	
+	public Vertex<T> getParentVertex() {
+		return parentVertex;
+	}
+
+	public void setParentVertex(Vertex<T> parentVertex) {
+		this.parentVertex = parentVertex;
+	}
+
 	public T getValue(){
 		return value;
 	}

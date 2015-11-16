@@ -1,7 +1,9 @@
 package com.artcoffer.utilities.graph.search;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import com.artcoffer.utilities.graph.Vertex;
 
@@ -20,6 +22,10 @@ public class Path<T> {
 	
 	public List<Vertex<T>> getPath(){
 		return new LinkedList<>(this.path);
+	}
+	
+	public List<T> getValues(){
+		return path.stream().map((v)->(v.getValue())).collect(Collectors.toList());
 	}
 
 }
