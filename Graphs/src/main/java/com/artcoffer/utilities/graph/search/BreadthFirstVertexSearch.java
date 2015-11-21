@@ -38,7 +38,7 @@ public class BreadthFirstVertexSearch<T> implements PathSearch<T>{
 			}
 			
 			Vertex<T> nextParent = target.getParentVertex();
-			while(nextParent.getParentVertex() != null){
+			while(nextParent.getParentVertex() != null && !nextParent.equals(startPoint)){
 				actualPathStack.add(nextParent);
 				nextParent = nextParent.getParentVertex();
 			}
