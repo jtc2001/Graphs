@@ -36,7 +36,7 @@ public class Graph<T> {
 	@Override
 	public String toString(){
 		StringBuilder sb = new StringBuilder();
-		for(Edge edge : edges){
+		for(Edge<T> edge : edges){
 			sb.append(edge.toString()).append(" ");
 		}
 		return sb.toString();
