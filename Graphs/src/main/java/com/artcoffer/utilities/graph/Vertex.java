@@ -4,7 +4,7 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
-public class Vertex<T> {
+public class Vertex<T>{
 	
 	private Set<Edge<T>> edges = new HashSet<>();
 	
@@ -56,5 +56,5 @@ public class Vertex<T> {
 	public String toString(){
 		return "Vertex[" + this.value.toString() + "]";
 	}
-	
+
 }
